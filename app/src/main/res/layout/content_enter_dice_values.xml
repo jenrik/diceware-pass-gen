@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:paddingTop="@dimen/status_bar_height"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.aptasystems.dicewarepasswordgenerator.EnterDiceValuesActivity"
     tools:showIn="@layout/activity_enter_dice_values">

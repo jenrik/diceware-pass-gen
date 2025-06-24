@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId "com.aptasystems.dicewarepasswordgenerator"
         minSdkVersion 31
-        targetSdkVersion 34
+        targetSdk 35
         versionCode 9
         versionName "1.8"
     }
@@ -16,13 +16,14 @@ android {
         }
     }
     namespace 'com.aptasystems.dicewarepasswordgenerator'
+    buildToolsVersion '36.0.0'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
     implementation 'com.mcxiaoke.volley:library:1.0.19'
     implementation('com.github.afollestad.material-dialogs:core:0.8.5.4@aar') {
         transitive = true
